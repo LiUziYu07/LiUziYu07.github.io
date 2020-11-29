@@ -15,7 +15,7 @@
 <meta property="og:description" content="第二章 计算机中的数据表示方法 原码 数值位不变 符号位0表示正数，1表示负数 ，又称符号-数值表示法 原码表示的二进制小数无法表示1与-1，有正0和负0之分 反码 符号位用0表示正数，1表示负数 数值位，正数与正值相等，负数反码的数值位是真值的数值位按位取反 反码表示的二进制小数无法表示1与-1，有正0和负0之分 补码 符号位用0表示正数，1表示负数 数值位正数补码与真值相同，负数补码是真值的数">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-22T02:00:00.831Z">
-<meta property="article:modified_time" content="2020-11-22T08:14:06.250Z">
+<meta property="article:modified_time" content="2020-11-29T09:29:11.476Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta property="fb:app_id" content="[object Object]">
@@ -116,7 +116,7 @@
 <p>补码的规格化：</p>
 <ul>
 <li><strong>正数规格化后，尾数形式为：0.1XX...X</strong></li>
-<li><strong>负数规格化后，尾数形式位：1.0XX...1</strong></li>
+<li><strong>负数规格化后，尾数形式位：1.0XX...0</strong></li>
 </ul>
 <p>###校验码</p>
 <p>码距：将一组编码中任何两个合法编码之间编码的不同<strong>最小位数</strong>称为码距</p>
@@ -126,9 +126,9 @@
 <li><span class="math inline">\(d \geq 2t + 1\)</span> 可检t位错误</li>
 <li><span class="math inline">\(d \geq e+t+1\)</span> 可检验e个错误，并纠正t个错误 <span class="math inline">\((e \geq t)\)</span></li>
 </ul>
-<p>####奇检验</p>
+<h4 id="奇检验">奇检验</h4>
 <p><strong>待传数据中1的个数为奇数，包括检验位</strong></p>
-<p>####偶检验</p>
+<h4 id="偶检验">偶检验</h4>
 <p><strong>待传数据中的1个个数为偶数，包括检验位</strong></p>
 <p>奇偶检验的特点，不能检验偶数个错误</p>
 <p><strong>可通过行列交叉奇/偶检验</strong>，检错和改错</p>
@@ -145,7 +145,7 @@ G_i = P_i \otimes  P_i 检验的数值位
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2020/11/22/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" data-id="cki2x2sml0003fvvn0nlgflld" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2020/11/22/%E7%AC%AC%E4%BA%8C%E7%AB%A0/" data-id="cki2x9emv0004n2vnfpx3f879" class="article-share-link">Share</a>
       
       
     </footer>
